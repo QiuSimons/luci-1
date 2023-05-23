@@ -628,7 +628,7 @@ const methods = {
 				let onlineusers = 0;
 
 				for (let line = fd.read('line'); length(line); line = fd.read('line'))
-					if (match(trim(line), /^.*(0x2).*(br-lan)$/))
+					if (match(trim(line), /^.*(0x2)$/))
 						onlineusers++;
 
 				fd.close();
